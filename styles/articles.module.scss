@@ -24,6 +24,11 @@
     font-size: 18px;
     font-weight: bold;
   }
+  h4 {
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
 
   p {
     margin: 6px 0;
@@ -39,6 +44,13 @@
   }
 
   ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 12px;
+    list-style-position: inside;
+  }
+  ol {
     display: flex;
     flex-direction: column;
     gap: 4px;
