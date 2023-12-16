@@ -16,7 +16,7 @@ export const generateStaticParams = async () => {
 
 const BlogArticle = async ({ params }: { params: { slug: string } }) => {
   const html = await markdownToHtml(
-    getMarkdown(`./contents/articles/${params.slug}/index.md`).content
+    getMarkdown(`./contents/articles/${params.slug}/index.md`).content,
   );
   return (
     <>

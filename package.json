@@ -6,7 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint:eslint": "next lint",
+    "lint:prettier": "prettier --check .",
+    "lint": "yarn typecheck && yarn lint:eslint && yarn lint:prettier",
+    "format:prettier": "prettier --write .",
+    "format:eslint": "eslint --fix .",
+    "format": "yarn format:prettier && yarn format:eslint",
+    "typecheck": "tsc --noEmit",
+    "codecheck": "yarn format && yarn lint"
   },
   "dependencies": {
     "@egoist/tailwindcss-icons": "^1.7.0",
