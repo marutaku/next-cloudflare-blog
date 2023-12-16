@@ -18,7 +18,7 @@ export type ArticleMetadata = {
 };
 
 export const getAllArticleMetadata = (
-  baseDirPath: string,
+  baseDirPath: string
 ): ArticleMetadata[] => {
   const articleFilePaths = globSync(`${baseDirPath}/**/index.md`);
   return articleFilePaths.map((filePath) => {
@@ -32,7 +32,7 @@ export const getAllArticleMetadata = (
     return {
       ...metadata,
       publishedDate: parse(metadata.publishedDate, "yyyy-MM-dd", new Date()),
-      heroImage: path.join(path.dirname(filePath), metadata.heroImage),
+      heroImage: path.join(`/articles/${metadata.slug}/`, metadata.heroImage),
     };
   });
 };
