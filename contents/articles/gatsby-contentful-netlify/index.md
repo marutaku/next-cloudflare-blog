@@ -1,6 +1,6 @@
 ---
 title: "ブログを作った話"
-date: "2019-02-11"
+publishedDate: "2019-02-11"
 category: "tech"
 description: "GatsbyJS+Contentful+Netlifyでブログを作りました。意外と簡単にできたのでまとめます。"
 slug: "gatsby-contentful-netlify"

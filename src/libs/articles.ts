@@ -47,6 +47,8 @@ export const getMarkdown = (filePath: string) => {
 };
 
 export const markdownToHtml = async (markdownContent: string) => {
-  const result = await remark().use(remarkHtml).process(markdownContent);
+  const result = await remark()
+    .use(remarkHtml, { allowDangerousHtml: true })
+    .process(markdownContent);
   return result.toString();
 };

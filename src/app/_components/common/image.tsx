@@ -5,22 +5,22 @@ const loader = ({ src }: ImageLoaderProps) => {
 };
 const StaticImage = ({
   src,
-  alt,
   width,
   height,
 }: {
   src: string;
-  alt: string;
-  width: number | string;
-  height: number | string;
+  width?: number | string;
+  height?: number | string;
 }) => {
   return (
     <div
       style={{
-        width,
-        height,
+        width: width || "auto",
+        height: height || "auto",
         backgroundImage: `url(${src})`,
-        backgroundSize: "cover",
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
       }}
     />
   );

@@ -1,6 +1,6 @@
 ---
 title: "Azure function AppからSQLデータベースへの接続で詰まった"
-date: "2019-07-01"
+publishedDate: "2019-07-01"
 category: "tech"
 description: "Function AppとSQLデータベースが連携しない。ドライバのバージョンの問題だった"
 slug: "azure-function-app-sql"
