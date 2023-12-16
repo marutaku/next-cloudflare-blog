@@ -21,20 +21,24 @@ export const getAllArticleMetadata = (
   baseDirPath: string
 ): ArticleMetadata[] => {
   const articleFilePaths = globSync(`${baseDirPath}/**/index.md`);
-  return articleFilePaths.map((filePath) => {
-    const fileContents = fs.readFileSync(filePath, "utf8");
-    const { metadata } = parseMD(fileContents) as {
-      metadata: ArticleMetadata & {
-        publishedDate: string;
-      };
-      content: string;
+  return articleFilePaths.map((articleFilePath) =>
+    getArticleMetadata(articleFilePath)
+  );
+};
+
+export const getArticleMetadata = (articlePath: string): ArticleMetadata => {
+  const fileContents = fs.readFileSync(articlePath, "utf8");
+  const { metadata } = parseMD(fileContents) as {
+    metadata: ArticleMetadata & {
+      publishedDate: string;
     };
-    return {
-      ...metadata,
-      publishedDate: parse(metadata.publishedDate, "yyyy-MM-dd", new Date()),
-      heroImage: path.join(`/articles/${metadata.slug}/`, metadata.heroImage),
-    };
-  });
+    content: string;
+  };
+  return {
+    ...metadata,
+    publishedDate: parse(metadata.publishedDate, "yyyy-MM-dd", new Date()),
+    heroImage: path.join(`/articles/${metadata.slug}/`, metadata.heroImage),
+  };
 };
 
 export const getMarkdown = (filePath: string) => {
