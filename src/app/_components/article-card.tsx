@@ -17,7 +17,7 @@ export const ArticleCard = ({
   return (
     <Link
       className="bg-white shadow-md rounded-md overflow-hidden cursor-pointer block flex flex-col"
-      style={{ width: 300, height: 360 }}
+      style={{ width: "100%", minWidth: 300, height: 360 }}
       href={link}
     >
       <div className="relative flex justify-center ">
