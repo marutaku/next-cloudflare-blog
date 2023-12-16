@@ -5,7 +5,7 @@ import {
   getMarkdown,
   markdownToHtml,
 } from "@/libs/articles";
-import styles from "../../../../styles/articles.module.scss";
+import "github-markdown-css/github-markdown-light.css"
 
 export const generateStaticParams = async () => {
   const articleMetadataList = getAllArticleMetadata("./contents/articles/");
@@ -24,10 +24,10 @@ const BlogArticle = async ({
   const metadata = getArticleMetadata(articlePath);
   const html = await markdownToHtml(getMarkdown(articlePath).content);
   return (
-    <div className="my-8">
+    <div className="my-8 container mx-auto"  style={{maxWidth: 800}}>
       <h1 className="text-2xl text-center m-4">{metadata.title}</h1>
       <div
-        className={styles.container}
+        className="markdown-body"
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </div>
