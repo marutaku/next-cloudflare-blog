@@ -1,17 +1,15 @@
 import StaticImage from "./common/image";
 import Link from "next/link";
+import { ArticleMetadata } from "@/libs/articles";
 
-type ArticleCardProps = {
-  title: string;
-  description: string;
-  imagePath: string;
+type ArticleCardProps = ArticleMetadata & {
   link: string;
 };
 
 export const ArticleCard = ({
   title,
   description,
-  imagePath,
+  heroImage,
   link,
 }: ArticleCardProps): JSX.Element => {
   return (
@@ -22,22 +20,18 @@ export const ArticleCard = ({
     >
       <div className="relative flex justify-center ">
         <StaticImage
-          src={imagePath}
+          src={heroImage}
           height={150}
           width="100%"
           alt="article image"
         />
       </div>
-      <div className="p-4 content" style={{ height: 150 }}>
+      <div className="p-4 content">
         <h2 className="text-xl font-bold">{title}</h2>
         <p className="mt-2 break-normal" style={{ height: "100%" }}>
           {description}
         </p>
       </div>
-      {/* <div className="px-4 py-1 flex items-center" style={{ height: 50 }}>
-        <div className="i-mdi-cards-heart-outline w-5 h-5" />
-        <div className="i-mdi-twitter w-5 h-5 text-gray-400" />
-      </div> */}
     </Link>
   );
 };
