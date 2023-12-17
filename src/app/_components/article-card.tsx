@@ -23,16 +23,16 @@ export const ArticleCard = ({
       <div className="relative flex justify-center ">
         <StaticImage src={heroImage} height={150} width="100%" />
       </div>
-      <div className="py-4 px-2 content flex-1">
+      <div className="py-2 px-4 content flex-1">
         <h2 className="text-xl font-bold">{title}</h2>
         <p
-          className="mt-2 break-normal overflow-ellipsis"
+          className="mt-2 break-normal overflow-hidden"
           style={{ height: "100%" }}
         >
           {description}
         </p>
       </div>
-      <div className="p-2 text-right text-gray-500">
+      <div className="py-2 px-4 text-right text-gray-500">
         {format(publishedDate, "yyyy/MM/dd")}
       </div>
     </Link>

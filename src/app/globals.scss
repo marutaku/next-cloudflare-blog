@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$header-height: 4rem;
+$footer-height: 4rem;
+
+.header {
+  height: $header-height;
+}
+
+.main {
+  min-height: calc(100vh - #{$header-height} - #{$footer-height});
+}
+.footer {
+  height: $footer-height;
+}

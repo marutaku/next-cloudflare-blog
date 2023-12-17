@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import Header from "./_components/common/header";
-import "./globals.css";
+import Footer from "./_components/common/footer";
+import "./globals.scss";
 
 const font = Noto_Sans_JP({ weight: "400", subsets: ["latin"] });
 
@@ -18,9 +19,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={font.className}>
-        <div className="min-h-screen">
+        <div className="min-h-screen main-area">
           <Header />
-          {children}
+          <div className="main">{children}</div>
+          <Footer />
         </div>
       </body>
     </html>
