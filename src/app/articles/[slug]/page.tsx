@@ -25,7 +25,7 @@ const BlogArticle = async ({
   const metadata = getArticleMetadata(articlePath);
   const html = await markdownToHtml(getMarkdown(articlePath).content);
   return (
-    <div className="my-8 container mx-auto" style={{ maxWidth: 800 }}>
+    <div className="m-8  container mx-auto" style={{ maxWidth: 800 }}>
       <div className="max-w-full">
         <StaticImage
           src={metadata.heroImage}
@@ -36,7 +36,7 @@ const BlogArticle = async ({
 
       <h1 className="text-2xl text-center m-4">{metadata.title}</h1>
       <div
-        className="markdown-body"
+        className="markdown-body p-4"
         dangerouslySetInnerHTML={{ __html: html }}
       />
     </div>
