@@ -27,11 +27,7 @@ const BlogArticle = async ({
   return (
     <div className="m-8  container mx-auto" style={{ maxWidth: 800 }}>
       <div className="max-w-full">
-        <StaticImage
-          src={metadata.heroImage}
-          height={200}
-          width="100%"
-        />
+        <StaticImage src={metadata.heroImage} height={200} width="100%" />
       </div>
 
       <h1 className="text-2xl text-center m-4">{metadata.title}</h1>

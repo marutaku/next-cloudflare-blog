@@ -14,9 +14,7 @@ const WorkExperience = ({
       <h3 className="text-md mr-2 md:w-48">
         {startAt} ~ {endAt || "現在"}
       </h3>
-      <h3 className="text-md">
-        {companyName} 
-      </h3>
+      <h3 className="text-md">{companyName}</h3>
       <h3 className="text-gray-600 italic">- {position}</h3>
     </div>
   );

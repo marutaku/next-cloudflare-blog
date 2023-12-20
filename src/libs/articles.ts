@@ -18,11 +18,11 @@ export type ArticleMetadata = {
 };
 
 export const getAllArticleMetadata = (
-  baseDirPath: string
+  baseDirPath: string,
 ): ArticleMetadata[] => {
   const articleFilePaths = globSync(`${baseDirPath}/**/index.md`);
   return articleFilePaths.map((articleFilePath) =>
-    getArticleMetadata(articleFilePath)
+    getArticleMetadata(articleFilePath),
   );
 };
 

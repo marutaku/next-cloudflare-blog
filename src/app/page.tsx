@@ -3,7 +3,7 @@ import ArticleCard from "./_components/article-card";
 
 export default function Home() {
   const articleMetadata = getAllArticleMetadata("./contents/articles/").sort(
-    (a, b) => Number(b.publishedDate) - Number(a.publishedDate)
+    (a, b) => Number(b.publishedDate) - Number(a.publishedDate),
   );
 
   return (
