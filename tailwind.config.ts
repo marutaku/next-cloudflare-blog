@@ -21,7 +21,7 @@ const config: Config = {
   },
   plugins: [
     iconsPlugin({
-      collections: getIconCollections(["mdi"]),
+      collections: getIconCollections(["mdi", "simple-icons"]),
     }),
   ],
 };

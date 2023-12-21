@@ -132,6 +132,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconify-json/simple-icons@npm:^1.1.85":
+  version: 1.1.85
+  resolution: "@iconify-json/simple-icons@npm:1.1.85"
+  dependencies:
+    "@iconify/types": "*"
+  checksum: 79d2f1ebbc8a9bf5e21ee91deeac813d1a390ad86028e8cea99ecb89c9f3367d0a79c8d680b6d275962688003d6eb62869e207ee64646323ba00d22b5edb77e4
+  languageName: node
+  linkType: hard
+
 "@iconify/types@npm:*, @iconify/types@npm:^2.0.0":
   version: 2.0.0
   resolution: "@iconify/types@npm:2.0.0"
@@ -3420,6 +3429,7 @@ __metadata:
   dependencies:
     "@egoist/tailwindcss-icons": ^1.7.0
     "@iconify-json/mdi": ^1.1.63
+    "@iconify-json/simple-icons": ^1.1.85
     "@types/node": ^20
     "@types/react": ^18
     "@types/react-dom": ^18

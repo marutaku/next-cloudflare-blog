@@ -18,6 +18,7 @@
   "dependencies": {
     "@egoist/tailwindcss-icons": "^1.7.0",
     "@iconify-json/mdi": "^1.1.63",
+    "@iconify-json/simple-icons": "^1.1.85",
     "date-fns": "^2.30.0",
     "dotenv": "^16.3.1",
     "github-markdown-css": "^5.5.0",
