@@ -1,16 +1,11 @@
 import React from "react";
-import {
-  getAllArticleMetadata,
-  getArticleMetadata,
-  getMarkdown,
-  markdownToHtml,
-} from "@/libs/articles";
+import { markdownToHtml } from "@/libs/articles";
 import "github-markdown-css/github-markdown-light.css";
 import StaticImage from "@/app/_components/common/image";
+import { getAllPosts, getPostBySlug } from "@/utils/confluence";
 
 export const generateStaticParams = async () => {
-  const articleMetadataList = getAllArticleMetadata("./contents/articles/");
-
+  const articleMetadataList = await getAllPosts();
   return articleMetadataList.map(({ slug }) => ({
     slug,
   }));
@@ -21,16 +16,14 @@ const BlogArticle = async ({
 }: {
   params: { slug: string; title: string };
 }) => {
-  const articlePath = `./contents/articles/${params.slug}/index.md`;
-  const metadata = getArticleMetadata(articlePath);
-  const html = await markdownToHtml(getMarkdown(articlePath).content);
+  const { body, heroImage, title } = await getPostBySlug(params.slug);
+  const html = await markdownToHtml(body);
   return (
     <div className="m-8  container mx-auto" style={{ maxWidth: 800 }}>
       <div className="max-w-full">
-        <StaticImage src={metadata.heroImage} height={200} width="100%" />
+        <StaticImage src={heroImage.url} height={200} width="100%" />
       </div>
-
-      <h1 className="text-2xl text-center m-4">{metadata.title}</h1>
+      <h1 className="text-2xl text-center m-4">{title}</h1>
       <div
         className="markdown-body p-4"
         dangerouslySetInnerHTML={{ __html: html }}

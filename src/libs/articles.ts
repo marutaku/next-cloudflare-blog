@@ -1,11 +1,7 @@
 import fs from "fs";
-import { globSync } from "glob";
 import matter from "gray-matter";
 import { remark } from "remark";
 import remarkHtml from "remark-html";
-import parseMD from "parse-md";
-import { parse } from "date-fns";
-import path from "path";
 
 export type ArticleMetadata = {
   title: string;
@@ -15,30 +11,6 @@ export type ArticleMetadata = {
   category: string;
   tags: string[];
   heroImage: string;
-};
-
-export const getAllArticleMetadata = (
-  baseDirPath: string,
-): ArticleMetadata[] => {
-  const articleFilePaths = globSync(`${baseDirPath}/**/index.md`);
-  return articleFilePaths.map((articleFilePath) =>
-    getArticleMetadata(articleFilePath),
-  );
-};
-
-export const getArticleMetadata = (articlePath: string): ArticleMetadata => {
-  const fileContents = fs.readFileSync(articlePath, "utf8");
-  const { metadata } = parseMD(fileContents) as {
-    metadata: ArticleMetadata & {
-      publishedDate: string;
-    };
-    content: string;
-  };
-  return {
-    ...metadata,
-    publishedDate: parse(metadata.publishedDate, "yyyy-MM-dd", new Date()),
-    heroImage: path.join(`/articles/${metadata.slug}/`, metadata.heroImage),
-  };
 };
 
 export const getMarkdown = (filePath: string) => {

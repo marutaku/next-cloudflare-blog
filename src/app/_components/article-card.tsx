@@ -21,7 +21,7 @@ export const ArticleCard = ({
       href={link}
     >
       <div className="relative flex justify-center ">
-        <StaticImage src={heroImage} height={150} width="100%" />
+        <StaticImage src={heroImage} height={150} width={300} />
       </div>
       <div className="py-2 px-4 content flex-1">
         <h2 className="text-xl font-bold">{title}</h2>
