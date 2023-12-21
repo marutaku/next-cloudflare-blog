@@ -6,7 +6,7 @@ import MyWorks from "../_components/about/my-works";
 
 const AboutPage: React.FC = () => {
   return (
-    <div className="container mx-auto p-4">
+    <div className="max-w-screen-md mx-auto p-4">
       <Description />
       <WorkExperiences />
       <PastActivities />

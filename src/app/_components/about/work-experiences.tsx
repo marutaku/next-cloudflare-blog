@@ -14,8 +14,9 @@ const WorkExperience = ({
       <h3 className="text-md mr-2 md:w-48">
         {startAt} ~ {endAt || "現在"}
       </h3>
-      <h3 className="text-md">{companyName}</h3>
-      <h3 className="text-gray-600 italic">- {position}</h3>
+      <h3 className="text-md">
+        {companyName} - <span className="text-gray-600 italic">{position}</span>
+      </h3>
     </div>
   );
 };
@@ -33,7 +34,7 @@ export default function WorkExperiences() {
         startAt="2021/04/01"
         endAt="2023/12/31"
         companyName="株式会社GA technologies AI Strategy Center"
-        position="Machine Learning Engineer"
+        position="ML Engineer"
       />
       <WorkExperience
         startAt="2017/04/01"
