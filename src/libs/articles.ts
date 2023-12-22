@@ -20,7 +20,7 @@ export const getMarkdown = (filePath: string) => {
 
 export const markdownToHtml = async (markdownContent: string) => {
   const result = await remark()
-    .use(remarkHtml, { allowDangerousHtml: true })
+    .use(remarkHtml, { sanitize: false })
     .process(markdownContent);
   return result.toString();
 };
