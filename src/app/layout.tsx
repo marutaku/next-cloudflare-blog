@@ -6,9 +6,51 @@ import "./globals.scss";
 
 const font = Noto_Sans_JP({ weight: "400", subsets: ["latin"] });
 
+const siteName = "クソザコエンジニア奮闘記";
+const description =
+  "クソザコエンジニアがつよつよエンジニアになるまで頑張るブログ";
+const url = process.env.NEXT_PUBLIC_URL
+  ? new URL(process.env.NEXT_PUBLIC_URL)
+  : "http://localhost:3000";
+const title = `Blog - ${process.env.NEXT_PUBLIC_SITE_TITLE}`;
+
 export const metadata: Metadata = {
-  title: "クソザコエンジニア奮闘記",
-  description: "クソザコエンジニアがつよつよエンジニアになるまで頑張るブログ",
+  metadataBase: new URL(url),
+  title: {
+    default: siteName,
+    template: `%s - ${siteName}`,
+  },
+  description,
+  openGraph: {
+    title: title,
+    description: description,
+    url: url,
+    siteName: title,
+    type: "website",
+    images: [{ url: "/profile.jpg" }],
+  },
+  manifest: "/site.webmanifest",
+  icons: [
+    {
+      url: "/favicon-16x16.png",
+      sizes: "16x16",
+      type: "image/png",
+      rel: "icon",
+    },
+    {
+      url: "/favicon-32x32.png",
+      sizes: "32x32",
+      type: "image/png",
+      rel: "icon",
+    },
+    {
+      url: "/safari-pinned-tab.svg",
+      sizes: "any",
+      type: "image/svg+xml",
+      rel: "mask-icon",
+      color: "#5bbad5",
+    },
+  ],
 };
 
 export default function RootLayout({
