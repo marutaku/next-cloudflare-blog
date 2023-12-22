@@ -15,20 +15,27 @@ const url = process.env.NEXT_PUBLIC_URL
 const title = `Blog - ${process.env.NEXT_PUBLIC_SITE_TITLE}`;
 
 export const metadata: Metadata = {
-  metadataBase: new URL(url),
+  // metadataBase: new URL(url),
+  // openGraph: {
+  //   title: title,
+  //   description: description,
+  //   url: url,
+  //   siteName: title,
+  //   type: "website",
+  //   images: [{ url: "/profile.jpg" }],
+  // },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: title,
+  //   description: description,
+  //   images: [{ url: "/profile.jpg" }],
+  // },
   title: {
     default: siteName,
     template: `%s - ${siteName}`,
   },
   description,
-  openGraph: {
-    title: title,
-    description: description,
-    url: url,
-    siteName: title,
-    type: "website",
-    images: [{ url: "/profile.jpg" }],
-  },
+
   manifest: "/site.webmanifest",
   icons: [
     {
