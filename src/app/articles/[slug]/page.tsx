@@ -27,6 +27,7 @@ const BlogArticle = async ({
       <div
         className="markdown-body p-4"
         dangerouslySetInnerHTML={{ __html: html }}
+        style={{ lineHeight: "1.9 !important" }}
       />
     </div>
   );
