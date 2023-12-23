@@ -42,7 +42,7 @@ export default function Description() {
             </a>
             <a
               className="inline-block m-2"
-              href="https://twitter.com/"
+              href="https://twitter.com/Takumi_Maru0131"
               target="_blank"
             >
               <span className="i-simple-icons-qiita" />
