@@ -16,7 +16,7 @@ export const ArticleCard = ({
 }: ArticleCardProps): JSX.Element => {
   return (
     <Link
-      className="bg-white shadow-md rounded-md overflow-hidden cursor-pointer block flex flex-col"
+      className="bg-white shadow-lg rounded-md overflow-hidden cursor-pointer block flex flex-col"
       style={{ width: "100%", minWidth: 300, height: 360 }}
       href={link}
     >
