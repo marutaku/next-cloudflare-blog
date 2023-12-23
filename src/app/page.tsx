@@ -1,5 +1,5 @@
 import ArticleCard from "./_components/article-card";
-import { getAllPosts } from "@/utils/confluence";
+import { getAllPosts } from "@/utils/contentful";
 import { parse } from "date-fns";
 
 export default async function Home() {

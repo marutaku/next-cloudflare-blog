@@ -14,6 +14,16 @@ type BlogProps = {
   description: string;
 };
 
+type BlogMetaDataProps = {
+  title: string;
+  slug: string;
+  publishDate: string;
+  heroImage: {
+    url: string;
+  };
+  description: string;
+};
+
 export async function getAllPosts(): Promise<BlogProps[]> {
   const { data } = await apolloClient.query({
     query: gql`
@@ -42,7 +52,6 @@ export async function getAllPosts(): Promise<BlogProps[]> {
             tags
             category
             publishDate
-            body
             description
           }
         }
@@ -76,6 +85,39 @@ export async function getPostBySlug(slug: string): Promise<BlogProps> {
             category
             publishDate
             body
+          }
+        }
+      }
+    `,
+    variables: {
+      slug,
+    },
+  });
+  return data.blogPostCollection.items[0];
+}
+
+export async function getPostMetadataBySlug(slug: string): Promise<BlogMetaDataProps> {
+  const { data } = await apolloClient.query({
+    query: gql`
+      query PageBySlug($slug: String!) {
+        blogPostCollection(where: { slug: $slug }) {
+          items {
+            heroImage {
+              url(
+                transform: {
+                  width: 1200
+                  height: 630
+                  resizeStrategy: FILL
+                  resizeFocus: CENTER
+                  format: JPG
+                  quality: 90
+                }
+              )
+            }
+            slug
+            title
+            publishDate
+            description
           }
         }
       }

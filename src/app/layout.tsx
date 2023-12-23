@@ -3,16 +3,12 @@ import { Noto_Sans_JP } from "next/font/google";
 import Header from "./_components/common/header";
 import Footer from "./_components/common/footer";
 import "./globals.scss";
+import { BLOG_NAME } from "@/utils/constants";
 
 const font = Noto_Sans_JP({ weight: "400", subsets: ["latin"] });
 
-const siteName = "クソザコエンジニア奮闘記";
 const description =
   "クソザコエンジニアがつよつよエンジニアになるまで頑張るブログ";
-const url = process.env.NEXT_PUBLIC_URL
-  ? new URL(process.env.NEXT_PUBLIC_URL)
-  : "http://localhost:3000";
-const title = `Blog - ${process.env.NEXT_PUBLIC_SITE_TITLE}`;
 
 export const metadata: Metadata = {
   // metadataBase: new URL(url),
@@ -31,8 +27,8 @@ export const metadata: Metadata = {
   //   images: [{ url: "/profile.jpg" }],
   // },
   title: {
-    default: siteName,
-    template: `%s - ${siteName}`,
+    default: BLOG_NAME,
+    template: `%s - ${BLOG_NAME}`,
   },
   description,
 

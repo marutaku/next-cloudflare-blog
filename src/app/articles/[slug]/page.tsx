@@ -3,7 +3,13 @@ import Script from "next/script";
 import { markdownToHtml } from "@/libs/articles";
 import "github-markdown-css/github-markdown-light.css";
 import StaticImage from "@/app/_components/common/image";
-import { getAllPosts, getPostBySlug } from "@/utils/confluence";
+import {
+  getAllPosts,
+  getPostBySlug,
+  getPostMetadataBySlug,
+} from "@/utils/contentful";
+import { Metadata, ResolvingMetadata } from "next";
+import { BLOG_NAME } from "@/utils/constants";
 
 export const generateStaticParams = async () => {
   const articleMetadataList = await getAllPosts();
@@ -11,6 +17,26 @@ export const generateStaticParams = async () => {
     slug,
   }));
 };
+
+export async function generateMetadata(
+  { params }: { params: { slug: string } },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const { slug } = params;
+  const article = await getPostMetadataBySlug(slug);
+
+  return {
+    title: article.title,
+    openGraph: {
+      title: article.title,
+      description: article.description,
+      url: `/articles/${article.slug}`,
+      siteName: BLOG_NAME,
+      type: "website",
+      images: [{ url: article.heroImage.url }],
+    },
+  };
+}
 
 const BlogArticle = async ({
   params,
