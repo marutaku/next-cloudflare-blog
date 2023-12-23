@@ -5,7 +5,11 @@ import Footer from "./_components/common/footer";
 import "./globals.scss";
 import { BLOG_NAME } from "@/utils/constants";
 
-const font = Noto_Sans_JP({ weight: "400", subsets: ["latin"] });
+const font = Noto_Sans_JP({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const description =
   "クソザコエンジニアがつよつよエンジニアになるまで頑張るブログ";
