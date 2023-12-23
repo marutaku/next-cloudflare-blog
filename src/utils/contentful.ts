@@ -42,7 +42,7 @@ export async function getAllPosts(): Promise<BlogProps[]> {
                   resizeStrategy: FILL
                   resizeFocus: CENTER
                   backgroundColor: "rgb:321032"
-                  format: JPG
+                  format: WEBP
                   quality: 90
                 }
               )
@@ -74,7 +74,7 @@ export async function getPostBySlug(slug: string): Promise<BlogProps> {
                   height: 300
                   resizeStrategy: FILL
                   resizeFocus: CENTER
-                  format: JPG
+                  format: WEBP
                   quality: 90
                 }
               )
@@ -109,7 +109,7 @@ export async function getPostMetadataBySlug(slug: string): Promise<BlogMetaDataP
                   height: 630
                   resizeStrategy: FILL
                   resizeFocus: CENTER
-                  format: JPG
+                  format: WEBP
                   quality: 90
                 }
               )
