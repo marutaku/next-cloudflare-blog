@@ -15,3 +15,9 @@ $footer-height: 4rem;
 .footer {
   height: $footer-height;
 }
+@layer base {
+  ol,
+  ul {
+    @apply list-disc list-inside;
+  }
+}

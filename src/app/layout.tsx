@@ -6,9 +6,10 @@ import "./globals.scss";
 import { BLOG_NAME } from "@/utils/constants";
 
 const font = Noto_Sans_JP({
-  weight: "400",
+  weight: ["400", "700"],
   subsets: ["latin"],
   display: "swap",
+  variable: "--noto-sans-font",
 });
 
 const description =
@@ -65,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja">
+    <html lang="ja" className="list-disc">
       <body className={font.className}>
         <div className="min-h-screen main-area">
           <Header />

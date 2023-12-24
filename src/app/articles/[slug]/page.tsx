@@ -10,6 +10,7 @@ import {
 } from "@/utils/contentful";
 import { Metadata, ResolvingMetadata } from "next";
 import { BLOG_NAME } from "@/utils/constants";
+import styles from "./articles.module.scss";
 
 export const generateStaticParams = async () => {
   const articleMetadataList = await getAllPosts();
@@ -54,9 +55,8 @@ const BlogArticle = async ({
         </div>
         <h1 className="text-2xl text-center m-4">{title}</h1>
         <div
-          className="markdown-body p-4"
+          className={`markdown-body p-4 ${styles.markdownBodyOverride}`}
           dangerouslySetInnerHTML={{ __html: html }}
-          style={{ lineHeight: "2 !important" }}
         />
       </div>
     </>
