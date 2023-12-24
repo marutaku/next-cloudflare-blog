@@ -14,6 +14,7 @@ export async function generateMetadata() {
       url: `/about`,
       siteName: BLOG_NAME,
       type: "website",
+      images: [{ url: "/profile.jpg" }],
     },
   };
 }
