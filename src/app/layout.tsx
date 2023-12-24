@@ -14,28 +14,27 @@ const font = Noto_Sans_JP({
 const description =
   "クソザコエンジニアがつよつよエンジニアになるまで頑張るブログ";
 
+const baseURL = process.env.CF_PAGES_URL || "https://localhost:3000";
+
 export const metadata: Metadata = {
-  // metadataBase: new URL(url),
-  // openGraph: {
-  //   title: title,
-  //   description: description,
-  //   url: url,
-  //   siteName: title,
-  //   type: "website",
-  //   images: [{ url: "/profile.jpg" }],
-  // },
-  // twitter: {
-  //   card: "summary_large_image",
-  //   title: title,
-  //   description: description,
-  //   images: [{ url: "/profile.jpg" }],
-  // },
+  metadataBase: new URL(baseURL),
+  openGraph: {
+    description: description,
+    url: baseURL,
+    siteName: BLOG_NAME,
+    type: "website",
+    images: [{ url: "/profile.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    description: description,
+    images: [{ url: "/profile.jpg" }],
+  },
   title: {
     default: BLOG_NAME,
     template: `%s - ${BLOG_NAME}`,
   },
   description,
-
   manifest: "/site.webmanifest",
   icons: [
     {
