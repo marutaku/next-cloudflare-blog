@@ -8,7 +8,7 @@ const Header: React.FC = () => {
           <a href="/">クソザコエンジニア奮闘記</a>
         </h1>
         <nav className="md:block sm:hidden">
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-4 list-none">
             <li>
               <a href="/">Home</a>
             </li>
