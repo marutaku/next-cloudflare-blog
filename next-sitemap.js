@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://blog.marutaku.info",
+  siteUrl: "blog.marutaku.info",
   generateRobotsTxt: true,
   outDir: "./out",
-  generateIndexSitemap: false,
+  sitemapSize: 7000,
 };
