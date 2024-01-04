@@ -3,4 +3,5 @@ module.exports = {
   siteUrl: "https://blog.marutaku.info",
   generateRobotsTxt: true,
   outDir: "./out",
+  generateIndexSitemap: false,
 };
