@@ -49,9 +49,14 @@ const BlogArticle = async ({
   return (
     <>
       <Script async src="//cdn.embedly.com/widgets/platform.js" />
-      <div className="m-8  container mx-auto" style={{ maxWidth: 800 }}>
+      <div className="m-8  container mx-auto max-w-[800px]">
         <div className="max-w-full">
-          <StaticImage src={heroImage.url} height={200} width="100%" />
+          <StaticImage
+            imageSize="contain"
+            src={heroImage.url}
+            height={200}
+            width="100%"
+          />
         </div>
         <h1 className="text-2xl text-center m-4">{title}</h1>
         <div

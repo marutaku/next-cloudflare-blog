@@ -8,11 +8,13 @@ const StaticImage = ({
   width,
   height,
   imageSize = "contain",
+  backgroundPosition = "center",
 }: {
   src: string;
   width?: number | string;
   height?: number | string;
   imageSize?: "cover" | "contain";
+  backgroundPosition?: string;
 }) => {
   return (
     <div
@@ -22,7 +24,7 @@ const StaticImage = ({
         backgroundImage: `url(${src})`,
         backgroundSize: imageSize,
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
+        backgroundPosition: backgroundPosition,
       }}
     />
   );
