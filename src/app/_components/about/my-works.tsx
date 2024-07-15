@@ -24,6 +24,11 @@ export default function MyWorks() {
     <div className="my-5">
       <h2 className="text-xl font-bold">作ったもの</h2>
       <MyWork
+        title="blog.marutaku.info"
+        link="https://blog.marutaku.info/"
+        description="このブログ"
+      />
+      <MyWork
         title="discord-stamp-generator"
         link="https://github.com/marutaku/discord-stamp-generator/"
         description="Discordのスタンプを簡単にCLIから作れるツール"

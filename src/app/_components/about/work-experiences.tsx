@@ -28,7 +28,7 @@ export default function WorkExperiences() {
       <h2 className="text-xl font-bold">職歴</h2>
       <WorkExperience
         startAt="2024/01/01"
-        companyName="エムスリー株式会社 BIR"
+        companyName="エムスリー株式会社 Engineering Group"
         position="Software Engineer"
       />
       <WorkExperience
