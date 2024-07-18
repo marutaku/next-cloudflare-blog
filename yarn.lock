@@ -2104,9 +2104,9 @@ __metadata:
   linkType: hard
 
 "github-markdown-css@npm:^5.5.0":
-  version: 5.5.0
-  resolution: "github-markdown-css@npm:5.5.0"
-  checksum: 58ba14ac87df700fd3a32a1999a6e9a4e36e808a4e1485f14aecb4230a690bfd3df508188c8a4874cae5556a87d23941b09036a22ee0f699fe844455952b1573
+  version: 5.6.1
+  resolution: "github-markdown-css@npm:5.6.1"
+  checksum: 454d32468c64b570b09a4bdfdefaa3c0c6fdbe9277498e8179bce407d2589461935c9fd1cebda505ace19a18b4aa9f1616cf580f7a5996904894dbcbc59d0c54
   languageName: node
   linkType: hard
 
