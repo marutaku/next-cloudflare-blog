@@ -175,11 +175,11 @@ __metadata:
   linkType: hard
 
 "@iconify-json/mdi@npm:^1.1.63":
-  version: 1.1.67
-  resolution: "@iconify-json/mdi@npm:1.1.67"
+  version: 1.1.68
+  resolution: "@iconify-json/mdi@npm:1.1.68"
   dependencies:
     "@iconify/types": "*"
-  checksum: c4f7164996c2c456fcbdb5699edcc6099e4e0da41ef8298c47e0dad8310c527f50af6dd3e4ccfb15e1c7e313b62254c749aef44acaee027d6d06a3495087b567
+  checksum: 20fdfb4e5ee14ac3435b44496c8e11c15db05cac671e7f4a836b46ea2d44b895698c2e736badab15d7cb2a4e11186da65f0ff3eca7caa8215a5e0cf327a18348
   languageName: node
   linkType: hard
 
