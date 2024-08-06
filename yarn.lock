@@ -184,11 +184,11 @@ __metadata:
   linkType: hard
 
 "@iconify-json/simple-icons@npm:^1.1.85":
-  version: 1.1.111
-  resolution: "@iconify-json/simple-icons@npm:1.1.111"
+  version: 1.1.112
+  resolution: "@iconify-json/simple-icons@npm:1.1.112"
   dependencies:
     "@iconify/types": "*"
-  checksum: af620596e201ec630e688ee7a58e25508af10944907bfbf9b392de2f79859b063b6959279492527a2517e01e79f8cfaf2c07a1c39b694d6435b0880f94e4884e
+  checksum: a94c2f8cdedb0467b7c7e55b484e32a05d65979ee770edd86c6d220e115aeb4433da388b364f3b7d4c6e28f29f73d71b4e7c18262ccd6b62a49d5a20700dfc78
   languageName: node
   linkType: hard
 
