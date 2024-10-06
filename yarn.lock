@@ -3689,10 +3689,10 @@ __metadata:
     react: ^18
     react-dom: ^18
     rehype-stringify: ^10.0.0
-    remark: ^15.0.1
-    remark-html: ^16.0.1
-    remark-parse: ^11.0.0
-    remark-rehype: ^11.0.0
+    remark: 15.0.1
+    remark-html: 16.0.1
+    remark-parse: 11.0.0
+    remark-rehype: 11.1.1
     sass: ^1.79.4
     tailwindcss: ^3.3.6
     typescript: ^5
@@ -4378,7 +4378,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-html@npm:^16.0.1":
+"remark-html@npm:16.0.1":
   version: 16.0.1
   resolution: "remark-html@npm:16.0.1"
   dependencies:
@@ -4391,7 +4391,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-parse@npm:^11.0.0":
+"remark-parse@npm:11.0.0, remark-parse@npm:^11.0.0":
   version: 11.0.0
   resolution: "remark-parse@npm:11.0.0"
   dependencies:
@@ -4403,7 +4403,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-rehype@npm:^11.0.0":
+"remark-rehype@npm:11.1.1":
   version: 11.1.1
   resolution: "remark-rehype@npm:11.1.1"
   dependencies:
@@ -4427,7 +4427,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark@npm:^15.0.1":
+"remark@npm:15.0.1":
   version: 15.0.1
   resolution: "remark@npm:15.0.1"
   dependencies:
