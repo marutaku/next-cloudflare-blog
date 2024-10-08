@@ -22,7 +22,7 @@
     "@iconify-json/simple-icons": "^1.1.85",
     "apollo-link": "^1.2.14",
     "apollo-link-http": "^1.5.17",
-    "date-fns": "^2.30.0",
+    "date-fns": "^4.0.0",
     "dotenv": "^16.3.1",
     "github-markdown-css": "^5.5.0",
     "glob": "^10.3.10",
