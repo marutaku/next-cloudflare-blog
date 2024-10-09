@@ -19,7 +19,7 @@
     "@apollo/client": "^3.8.8",
     "@egoist/tailwindcss-icons": "^1.7.0",
     "@iconify-json/mdi": "^1.1.63",
-    "@iconify-json/simple-icons": "^1.1.85",
+    "@iconify-json/simple-icons": "^1.2.7",
     "apollo-link": "^1.2.14",
     "apollo-link-http": "^1.5.17",
     "date-fns": "^4.0.0",
