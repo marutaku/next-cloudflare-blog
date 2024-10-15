@@ -50,7 +50,7 @@
     "postcss": "^8.4.32",
     "prettier": "^3.1.1",
     "sass": "^1.79.4",
-    "tailwindcss": "^3.3.6",
+    "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2"
   },
   "packageManager": "yarn@3.6.3"
