@@ -16,12 +16,12 @@
     "codecheck": "yarn format && yarn lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.8.8",
+    "@apollo/client": "3.8.8",
     "@egoist/tailwindcss-icons": "^1.7.0",
     "@iconify-json/mdi": "^1.2.1",
     "@iconify-json/simple-icons": "^1.2.7",
-    "apollo-link": "^1.2.14",
-    "apollo-link-http": "^1.5.17",
+    "apollo-link": "1.2.14",
+    "apollo-link-http": "1.5.17",
     "date-fns": "^4.0.0",
     "dotenv": "^16.3.1",
     "github-markdown-css": "^5.7.0",
