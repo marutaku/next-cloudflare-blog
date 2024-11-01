@@ -3964,7 +3964,7 @@ __metadata:
     sass: 1.80.5
     tailwindcss: 3.4.14
     typescript: 5.6.3
-    unified: 11.0.4
+    unified: 11.0.5
   languageName: unknown
   linkType: soft
 
@@ -5487,7 +5487,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unified@npm:11.0.4, unified@npm:^11.0.0":
+"unified@npm:11.0.5":
+  version: 11.0.5
+  resolution: "unified@npm:11.0.5"
+  dependencies:
+    "@types/unist": ^3.0.0
+    bail: ^2.0.0
+    devlop: ^1.0.0
+    extend: ^3.0.0
+    is-plain-obj: ^4.0.0
+    trough: ^2.0.0
+    vfile: ^6.0.0
+  checksum: b3bf7fd6f568cc261e074dae21188483b0f2a8ab858d62e6e85b75b96cc655f59532906ae3c64d56a9b257408722d71f1d4135292b3d7ee02907c8b592fb3cf0
+  languageName: node
+  linkType: hard
+
+"unified@npm:^11.0.0":
   version: 11.0.4
   resolution: "unified@npm:11.0.4"
   dependencies:
