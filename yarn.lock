@@ -2441,10 +2441,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"github-markdown-css@npm:5.7.0":
-  version: 5.7.0
-  resolution: "github-markdown-css@npm:5.7.0"
-  checksum: 4384957748f7122500d17adf9f0f5bf2d59b33f641544606cae0695211bbc4594fdf5be364ffa098c8bbf070c1f4fc827e601234ac9bb2f7cfd3411a59cd7e8f
+"github-markdown-css@npm:5.8.0":
+  version: 5.8.0
+  resolution: "github-markdown-css@npm:5.8.0"
+  checksum: 34bc5984b64be596aa7454e79f7ba1f3514ed3595b87217befc608129bf160107845a6a282c13ffe6426850246b34609867940e088a788aa0f88ced8aead7c8e
   languageName: node
   linkType: hard
 
@@ -3971,7 +3971,7 @@ __metadata:
     dotenv: 16.4.5
     eslint: 9.15.0
     eslint-config-next: 14.2.18
-    github-markdown-css: 5.7.0
+    github-markdown-css: 5.8.0
     glob: 11.0.0
     graphql: 16.9.0
     gray-matter: 4.0.3
