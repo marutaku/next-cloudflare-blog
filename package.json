@@ -16,7 +16,7 @@
     "codecheck": "yarn format && yarn lint"
   },
   "dependencies": {
-    "@apollo/client": "3.11.10",
+    "@apollo/client": "3.12.2",
     "@egoist/tailwindcss-icons": "1.8.1",
     "@iconify-json/mdi": "1.2.1",
     "@iconify-json/simple-icons": "1.2.14",
