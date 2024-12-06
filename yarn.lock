@@ -3969,7 +3969,7 @@ __metadata:
     remark-html: 16.0.1
     remark-parse: 11.0.0
     remark-rehype: 11.1.1
-    sass: 1.81.1
+    sass: 1.82.0
     tailwindcss: 3.4.16
     typescript: 5.7.2
     unified: 11.0.5
@@ -4857,9 +4857,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:1.81.1":
-  version: 1.81.1
-  resolution: "sass@npm:1.81.1"
+"sass@npm:1.82.0":
+  version: 1.82.0
+  resolution: "sass@npm:1.82.0"
   dependencies:
     "@parcel/watcher": ^2.4.1
     chokidar: ^4.0.0
@@ -4870,7 +4870,7 @@ __metadata:
       optional: true
   bin:
     sass: sass.js
-  checksum: 50e356450ab2d156bf2c9eb5bb59666bfb54074f449f88f64a0ef3b19e70da2ea42ce7e58a70b3a4e9e20f9c519bd17b9900621a1bbe6fbdec287080d55f5f3b
+  checksum: 3fbfed5361147627097261e69715d6e4826864b636df5a70e4100228fe0e3c1bfd264e2401cfd3e291f739fbee2bd2f56dff27f7f5dc0e21d320356bf51630d0
   languageName: node
   linkType: hard
 
