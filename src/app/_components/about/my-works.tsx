@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const MyWork = ({
   title,
   link,
@@ -10,9 +12,9 @@ const MyWork = ({
   return (
     <div className="my-4 mx-2">
       <h3 className="text-lg">
-        <a className="underline" href={link} target="_blank">
+        <Link className="underline" href={link} target="_blank">
           {title}
-        </a>
+        </Link>
       </h3>
       <p className="m-2">{description}</p>
     </div>
