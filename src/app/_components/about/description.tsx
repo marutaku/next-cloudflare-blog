@@ -1,4 +1,3 @@
-import Link from "next/link";
 import StaticImage from "../common/image";
 
 export default function Description() {
@@ -20,34 +19,34 @@ export default function Description() {
           </div>
           <p>Software Engineer, NLP Researcher</p>
           <div className="text-gray-600 text-3xl my-4">
-            <Link
+            <a
               className="inline-block m-2"
               href="https://twitter.com/Takumi_Maru0131"
               target="_blank"
             >
               <span className="i-simple-icons-x" />
-            </Link>
-            <Link
+            </a>
+            <a
               className="inline-block m-2"
               href="https://github.com/marutaku"
               target="_blank"
             >
               <span className="i-simple-icons-github" />
-            </Link>
-            <Link
+            </a>
+            <a
               className="inline-block m-2"
               href="https://www.linkedin.com/in/takumi-maruyama-049151156/"
               target="_blank"
             >
               <span className="i-simple-icons-linkedin" />
-            </Link>
-            <Link
+            </a>
+            <a
               className="inline-block m-2"
               href="https://twitter.com/Takumi_Maru0131"
               target="_blank"
             >
               <span className="i-simple-icons-qiita" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

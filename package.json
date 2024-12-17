@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build && next-sitemap --config next-sitemap.js",
     "start": "next start",
     "lint:eslint": "next lint",
@@ -16,22 +16,22 @@
     "codecheck": "yarn format && yarn lint"
   },
   "dependencies": {
-    "@apollo/client": "3.11.10",
+    "@apollo/client": "3.12.3",
     "@egoist/tailwindcss-icons": "1.8.1",
     "@iconify-json/mdi": "1.2.1",
-    "@iconify-json/simple-icons": "1.2.13",
+    "@iconify-json/simple-icons": "1.2.16",
     "apollo-link": "1.2.14",
     "apollo-link-http": "1.5.17",
     "date-fns": "4.1.0",
-    "dotenv": "16.4.5",
+    "dotenv": "16.4.7",
     "github-markdown-css": "5.8.1",
     "glob": "11.0.0",
-    "graphql": "16.9.0",
+    "graphql": "16.10.0",
     "gray-matter": "4.0.3",
     "next": "15.1.0",
     "parse-md": "3.0.3",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "rehype-stringify": "10.0.1",
     "remark": "15.0.1",
     "remark-html": "16.0.1",
@@ -40,22 +40,18 @@
     "unified": "11.0.5"
   },
   "devDependencies": {
-    "@types/node": "22.10.1",
-    "@types/react": "19.0.1",
-    "@types/react-dom": "19.0.2",
+    "@types/node": "22.10.2",
+    "@types/react": "18.3.17",
+    "@types/react-dom": "18.3.5",
     "autoprefixer": "10.4.20",
-    "eslint": "9.16.0",
+    "eslint": "9.17.0",
     "eslint-config-next": "15.1.0",
     "next-sitemap": "4.2.3",
     "postcss": "8.4.49",
-    "prettier": "3.4.1",
-    "sass": "1.81.0",
-    "tailwindcss": "3.4.15",
+    "prettier": "3.4.2",
+    "sass": "1.83.0",
+    "tailwindcss": "3.4.16",
     "typescript": "5.7.2"
   },
-  "packageManager": "yarn@3.8.6",
-  "resolutions": {
-    "@types/react": "19.0.1",
-    "@types/react-dom": "19.0.2"
-  }
+  "packageManager": "yarn@3.8.7"
 }

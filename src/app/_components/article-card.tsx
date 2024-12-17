@@ -3,8 +3,6 @@ import Link from "next/link";
 import { ArticleMetadata } from "@/libs/articles";
 import { format } from "date-fns";
 
-import type { JSX } from "react";
-
 type ArticleCardProps = ArticleMetadata & {
   link: string;
 };

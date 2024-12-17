@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const Activity = ({
   title,
   date,
@@ -13,9 +11,9 @@ const Activity = ({
     <div className="my-4 mx-2 md:flex">
       <h3 className="text-md mr-2 md:w-24">{date}</h3>
       <h3 className="text-md">
-        <Link className="underline" href={link} target="_blank">
+        <a className="underline" href={link} target="_blank">
           {title}
-        </Link>
+        </a>
       </h3>
     </div>
   </div>
