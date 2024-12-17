@@ -2,6 +2,7 @@ import StaticImage from "./common/image";
 import Link from "next/link";
 import { ArticleMetadata } from "@/libs/articles";
 import { format } from "date-fns";
+import { JSX } from "react";
 
 type ArticleCardProps = ArticleMetadata & {
   link: string;
@@ -16,7 +17,7 @@ export const ArticleCard = ({
 }: ArticleCardProps): JSX.Element => {
   return (
     <Link
-      className="bg-white border rounded-md overflow-hidden cursor-pointer block flex flex-col py-2 hover:shadow"
+      className="bg-white border rounded-md overflow-hidden cursor-pointer flex flex-col py-2 hover:shadow"
       style={{ width: "100%", minWidth: 300, height: 360 }}
       href={link}
     >
