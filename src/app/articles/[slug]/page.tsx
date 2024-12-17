@@ -20,10 +20,10 @@ export const generateStaticParams = async () => {
 };
 
 export async function generateMetadata(
-  { params }: { params: { slug: string } },
+  { params }: { params: Promise<{ slug: string }> },
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   const article = await getPostMetadataBySlug(slug);
 
   return {
@@ -42,9 +42,9 @@ export async function generateMetadata(
 const BlogArticle = async ({
   params,
 }: {
-  params: { slug: string; title: string };
+  params: Promise<{ slug: string; title: string }>;
 }) => {
-  const { body, heroImage, title } = await getPostBySlug(params.slug);
+  const { body, heroImage, title } = await getPostBySlug((await params).slug);
   const html = await markdownToHtml(body);
   return (
     <>
