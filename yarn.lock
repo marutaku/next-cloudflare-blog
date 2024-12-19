@@ -19,7 +19,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@antfu/install-pkg@npm:^0.4.0":
+"@antfu/install-pkg@npm:^0.4.1":
   version: 0.4.1
   resolution: "@antfu/install-pkg@npm:0.4.1"
   dependencies:
@@ -80,14 +80,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@egoist/tailwindcss-icons@npm:1.8.1":
-  version: 1.8.1
-  resolution: "@egoist/tailwindcss-icons@npm:1.8.1"
+"@egoist/tailwindcss-icons@npm:1.8.2":
+  version: 1.8.2
+  resolution: "@egoist/tailwindcss-icons@npm:1.8.2"
   dependencies:
-    "@iconify/utils": ^2.1.24
+    "@iconify/utils": ^2.2.0
   peerDependencies:
     tailwindcss: "*"
-  checksum: 13683727aca87387f406b3f3a68bfe9c219cd12de99d83f2405b5007ccdf7df13fcd24474effa513e7e0ccc5d8a622b0634634f27fb26b08b87d4cdf96db1aaa
+  checksum: 010c2a1bf015d7e58f39873891a7b3e063aa0c7aa81ba6cd669faca21a5bc2f26a9db82a13bb73b99300fe05815f25efaec0aae5d770c97d4345b923d6034ba1
   languageName: node
   linkType: hard
 
@@ -255,18 +255,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/utils@npm:^2.1.24":
-  version: 2.1.33
-  resolution: "@iconify/utils@npm:2.1.33"
+"@iconify/utils@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@iconify/utils@npm:2.2.0"
   dependencies:
-    "@antfu/install-pkg": ^0.4.0
+    "@antfu/install-pkg": ^0.4.1
     "@antfu/utils": ^0.7.10
     "@iconify/types": ^2.0.0
-    debug: ^4.3.6
+    debug: ^4.4.0
+    globals: ^15.13.0
     kolorist: ^1.8.0
-    local-pkg: ^0.5.0
-    mlly: ^1.7.1
-  checksum: 2d8bed71aa350954ea6f6c23e3c02263d3058c270ab5c71cae5cbc7c9c0ceb1ba986378696f5854b00a94fbfd5cd9afdd0ba8ae360efe352560a14ecc46a9649
+    local-pkg: ^0.5.1
+    mlly: ^1.7.3
+  checksum: 1a11461c9c72a377eadf72a0a680665697e65ea4691a809ccd73f0447f0f88110cd8cb1ef5161942aeb2ae4554149a32b30c135c934eb84a4cd22af7143afeb0
   languageName: node
   linkType: hard
 
@@ -1900,15 +1901,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"debug@npm:^4.3.6":
-  version: 4.3.7
-  resolution: "debug@npm:4.3.7"
+"debug@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "debug@npm:4.4.0"
   dependencies:
     ms: ^2.1.3
   peerDependenciesMeta:
     supports-color:
       optional: true
-  checksum: 822d74e209cd910ef0802d261b150314bbcf36c582ccdbb3e70f0894823c17e49a50d3e66d96b633524263975ca16b6a833f3e3b7e030c157169a5fabac63160
+  checksum: fb42df878dd0e22816fc56e1fdca9da73caa85212fbe40c868b1295a6878f9101ae684f4eeef516c13acfc700f5ea07f1136954f43d4cd2d477a811144136479
   languageName: node
   linkType: hard
 
@@ -2989,6 +2990,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"globals@npm:^15.13.0":
+  version: 15.13.0
+  resolution: "globals@npm:15.13.0"
+  checksum: 3f98514ce25a21150b246fbd63aeaeb271a93b3340cf7f4f6e9934d3b37dbb4b0fddef9c470183097dcfd2e8757bb86bbae701588f0e376667d8d9d6f665db3b
+  languageName: node
+  linkType: hard
+
 "globalthis@npm:^1.0.3":
   version: 1.0.3
   resolution: "globalthis@npm:1.0.3"
@@ -4004,13 +4012,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"local-pkg@npm:^0.5.0":
-  version: 0.5.0
-  resolution: "local-pkg@npm:0.5.0"
+"local-pkg@npm:^0.5.1":
+  version: 0.5.1
+  resolution: "local-pkg@npm:0.5.1"
   dependencies:
-    mlly: ^1.4.2
-    pkg-types: ^1.0.3
-  checksum: b0a6931e588ad4f7bf4ab49faacf49e07fc4d05030f895aa055d46727a15b99300d39491cf2c3e3f05284aec65565fb760debb74c32e64109f4a101f9300d81a
+    mlly: ^1.7.3
+    pkg-types: ^1.2.1
+  checksum: 478effb440780d412bff78ed80d1593d707a504931a7e5899d6570d207da1e661a6128c3087286ff964696a55c607c2bbd2bbe98377401c7d395891c160fa6e1
   languageName: node
   linkType: hard
 
@@ -4572,7 +4580,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mlly@npm:^1.4.2, mlly@npm:^1.7.1, mlly@npm:^1.7.2":
+"mlly@npm:^1.7.2":
   version: 1.7.2
   resolution: "mlly@npm:1.7.2"
   dependencies:
@@ -4581,6 +4589,18 @@ __metadata:
     pkg-types: ^1.2.0
     ufo: ^1.5.4
   checksum: 66a92b0ac4f76cac22d2d6688338fece01f2ac4afd7816cd4224525c1f9032c452075730c54c3ef7558485455d704b7141060e517785c93b276b2faa3bb04199
+  languageName: node
+  linkType: hard
+
+"mlly@npm:^1.7.3":
+  version: 1.7.3
+  resolution: "mlly@npm:1.7.3"
+  dependencies:
+    acorn: ^8.14.0
+    pathe: ^1.1.2
+    pkg-types: ^1.2.1
+    ufo: ^1.5.4
+  checksum: 60d309c7ce2ac162224a087fcd683a891260511f57011b2f436b54dfef146b8aae7473013958a58d5b6039f2a8692c32a2599c8390c5b307d1119ad0d917b414
   languageName: node
   linkType: hard
 
@@ -4637,7 +4657,7 @@ __metadata:
   resolution: "next-cloudflare-blog@workspace:."
   dependencies:
     "@apollo/client": 3.12.3
-    "@egoist/tailwindcss-icons": 1.8.1
+    "@egoist/tailwindcss-icons": 1.8.2
     "@iconify-json/mdi": 1.2.1
     "@iconify-json/simple-icons": 1.2.16
     "@types/node": 22.10.2
@@ -5099,7 +5119,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pkg-types@npm:^1.0.3, pkg-types@npm:^1.2.0":
+"pkg-types@npm:^1.2.0, pkg-types@npm:^1.2.1":
   version: 1.2.1
   resolution: "pkg-types@npm:1.2.1"
   dependencies:
