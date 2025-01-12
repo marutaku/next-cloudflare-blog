@@ -868,21 +868,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:19.0.2":
-  version: 19.0.2
-  resolution: "@types/react-dom@npm:19.0.2"
+"@types/react-dom@npm:19.0.3":
+  version: 19.0.3
+  resolution: "@types/react-dom@npm:19.0.3"
   peerDependencies:
     "@types/react": ^19.0.0
-  checksum: d2ae81ec0b8eee7a4bf31918796fdaa34e8db68f69682163bc212d759de76783e6ffcc02c02722dcf508429067148841e6da81414cc730ca2a28c9c2b350c880
+  checksum: a253931fc3a41a74ef99a7380fa3fa02b94ddd1addba9fc0aea39c90ce3dfb22d60fbac292669de224b1ffb23836cde3cc78c2425f0c77593435b6368a9fd2ed
   languageName: node
   linkType: hard
 
-"@types/react@npm:19.0.4":
-  version: 19.0.4
-  resolution: "@types/react@npm:19.0.4"
+"@types/react@npm:19.0.5":
+  version: 19.0.5
+  resolution: "@types/react@npm:19.0.5"
   dependencies:
     csstype: ^3.0.2
-  checksum: 96efaf1f4a682f606281aec06fe34f6ebf0741815b0be3dd897bc3b28eb60e4abccb0e184f202e1fa38d1ed7c050a68bfba5c1e3b51c0f25cb554da263e7c6c8
+  checksum: 3f9e98a4027a32439aabc50f569ea029a553310ad480d160ce8a2d54959670882db99ca029ddb4b30e0c6c554903551a0fdef17a26d89aafc28f63b15e78bad8
   languageName: node
   linkType: hard
 
@@ -4664,8 +4664,8 @@ __metadata:
     "@iconify-json/mdi": 1.2.2
     "@iconify-json/simple-icons": 1.2.17
     "@types/node": 22.10.5
-    "@types/react": 19.0.4
-    "@types/react-dom": 19.0.2
+    "@types/react": 19.0.5
+    "@types/react-dom": 19.0.3
     apollo-link: 1.2.14
     apollo-link-http: 1.5.17
     autoprefixer: 10.4.20
