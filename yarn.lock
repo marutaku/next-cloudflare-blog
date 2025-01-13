@@ -877,12 +877,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:19.0.5":
-  version: 19.0.5
-  resolution: "@types/react@npm:19.0.5"
+"@types/react@npm:19.0.6":
+  version: 19.0.6
+  resolution: "@types/react@npm:19.0.6"
   dependencies:
     csstype: ^3.0.2
-  checksum: 3f9e98a4027a32439aabc50f569ea029a553310ad480d160ce8a2d54959670882db99ca029ddb4b30e0c6c554903551a0fdef17a26d89aafc28f63b15e78bad8
+  checksum: 462a736ce0e6162e0e4002afe4157ae1f56c3ae9ce1eccc2ddabe137970cd84e689199197e0705ff646152e8408dd6201a703ead7f2aa01e4c48c7a47447fe6b
   languageName: node
   linkType: hard
 
@@ -4664,7 +4664,7 @@ __metadata:
     "@iconify-json/mdi": 1.2.2
     "@iconify-json/simple-icons": 1.2.17
     "@types/node": 22.10.5
-    "@types/react": 19.0.5
+    "@types/react": 19.0.6
     "@types/react-dom": 19.0.3
     apollo-link: 1.2.14
     apollo-link-http: 1.5.17
