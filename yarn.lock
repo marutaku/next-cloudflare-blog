@@ -239,12 +239,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/mdi@npm:1.2.2":
-  version: 1.2.2
-  resolution: "@iconify-json/mdi@npm:1.2.2"
+"@iconify-json/mdi@npm:1.2.3":
+  version: 1.2.3
+  resolution: "@iconify-json/mdi@npm:1.2.3"
   dependencies:
     "@iconify/types": "*"
-  checksum: 5c34b3e75e08626901ba89bf99b09d37a2d8ee24d87ece3eba3a21b357b2ddfc4603bd9bfd2000a551aaccc6b2b61c3a4753f95e948b88896fd9eb917f33587a
+  checksum: cf229936c9941b9f022e24423a5a6b0953869c701ca36fef021cef08be1b59571de879568302b168d4912962c6ad17f93d3eb43fe9722b00bf9967b22d9cbb79
   languageName: node
   linkType: hard
 
@@ -4680,7 +4680,7 @@ __metadata:
   dependencies:
     "@apollo/client": 3.13.5
     "@egoist/tailwindcss-icons": 1.9.0
-    "@iconify-json/mdi": 1.2.2
+    "@iconify-json/mdi": 1.2.3
     "@iconify-json/simple-icons": 1.2.29
     "@types/node": 22.13.11
     "@types/react": 19.0.12
