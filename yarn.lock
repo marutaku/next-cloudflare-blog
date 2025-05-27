@@ -314,12 +314,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/simple-icons@npm:1.2.29":
-  version: 1.2.29
-  resolution: "@iconify-json/simple-icons@npm:1.2.29"
+"@iconify-json/simple-icons@npm:1.2.36":
+  version: 1.2.36
+  resolution: "@iconify-json/simple-icons@npm:1.2.36"
   dependencies:
     "@iconify/types": "*"
-  checksum: 55be86d50d10e5ab2d59e960f698b84409ae6d04fb74bcdf08a79e1e74dd8d4c709f4ce7ce255070c5c95bc35d8702ab181ae412387649af498ecb51dfecfd7b
+  checksum: 238475b661f2283ef69988bf4b2077900f7ed5e316ce57d4989710c8c2437b44d68b951dd78089d33b244def954d9f227c43e7ac4a69b56c9ac95c7d93e225ae
   languageName: node
   linkType: hard
 
@@ -4928,7 +4928,7 @@ __metadata:
     "@apollo/client": 3.13.5
     "@egoist/tailwindcss-icons": 1.9.0
     "@iconify-json/mdi": 1.2.3
-    "@iconify-json/simple-icons": 1.2.29
+    "@iconify-json/simple-icons": 1.2.36
     "@tailwindcss/postcss": 4.1.7
     "@types/node": 22.14.1
     "@types/react": 19.1.5
