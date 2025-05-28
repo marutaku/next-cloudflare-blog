@@ -40,7 +40,7 @@
     "unified": "11.0.5"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.1.7",
+    "@tailwindcss/postcss": "4.1.8",
     "@types/node": "22.14.1",
     "@types/react": "19.1.6",
     "@types/react-dom": "19.1.5",
@@ -51,7 +51,7 @@
     "postcss": "8.5.3",
     "prettier": "3.5.3",
     "sass": "1.89.0",
-    "tailwindcss": "4.1.7",
+    "tailwindcss": "4.1.8",
     "typescript": "5.8.3"
   },
   "packageManager": "yarn@3.8.7"
