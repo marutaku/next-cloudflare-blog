@@ -1116,12 +1116,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:19.1.7":
-  version: 19.1.7
-  resolution: "@types/react@npm:19.1.7"
+"@types/react@npm:19.1.8":
+  version: 19.1.8
+  resolution: "@types/react@npm:19.1.8"
   dependencies:
     csstype: ^3.0.2
-  checksum: eb36382960a5c1131d636cecf3449f02d1d1c79a5056bc74fdd3b493165675c4e7fd8a0240629a92d790f7cc103e6a9f54b623fc47d007730143c4039583b637
+  checksum: 17e0c74d9c01214938fa805aaa8b97925bf3c5514e88fdf94bec42c0a6d4abbc63d4e30255db176f46fd7f0aa89f8085b9b2b2fa5abaffbbf7e5009386ada892
   languageName: node
   linkType: hard
 
@@ -4912,7 +4912,7 @@ __metadata:
     "@iconify-json/simple-icons": 1.2.29
     "@tailwindcss/postcss": 4.1.8
     "@types/node": 22.14.1
-    "@types/react": 19.1.7
+    "@types/react": 19.1.8
     "@types/react-dom": 19.1.6
     apollo-link: 1.2.14
     apollo-link-http: 1.5.17
