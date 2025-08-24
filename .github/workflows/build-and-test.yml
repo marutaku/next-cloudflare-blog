@@ -23,7 +23,7 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
-    needs: deploy-preview
+    needs: ["deploy-preview"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -34,7 +34,9 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
-        run: npx playwright test
+        run: |
+          PREVIEW_URL_PREFIX=echo ${{ github.head_ref }} | sed 's/[^a-zA-Z0-9]/-/g'
+          PLAYWRIGHT_BASE_URL=https://$PREVIEW_URL_PREFIX.next-cloudflare-blog.pages.dev yarn test:e2e
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
