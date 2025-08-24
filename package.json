@@ -41,7 +41,7 @@
     "unified": "11.0.5"
   },
   "devDependencies": {
-    "@playwright/test": "^1.55.0",
+    "@playwright/test": "1.55.0",
     "@tailwindcss/postcss": "4.1.11",
     "@types/node": "22.14.1",
     "@types/react": "19.1.8",
