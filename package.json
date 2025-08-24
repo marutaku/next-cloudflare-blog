@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build && next-sitemap --config next-sitemap.js",
     "start": "next start",
-    "lint:eslint": "next lint",
+    "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
     "lint": "yarn typecheck && yarn lint:eslint && yarn lint:prettier",
     "format:prettier": "prettier --write .",
@@ -41,6 +41,8 @@
     "unified": "11.0.5"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.34.0",
     "@playwright/test": "1.55.0",
     "@tailwindcss/postcss": "4.1.12",
     "@types/node": "22.17.2",

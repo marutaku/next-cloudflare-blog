@@ -21,7 +21,7 @@ export const generateStaticParams = async () => {
 
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> },
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ): Promise<Metadata> {
   const { slug } = await params;
   const article = await getPostMetadataBySlug(slug);
