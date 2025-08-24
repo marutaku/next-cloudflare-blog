@@ -96,7 +96,9 @@ export async function getPostBySlug(slug: string): Promise<BlogProps> {
   return data.blogPostCollection.items[0];
 }
 
-export async function getPostMetadataBySlug(slug: string): Promise<BlogMetaDataProps> {
+export async function getPostMetadataBySlug(
+  slug: string,
+): Promise<BlogMetaDataProps> {
   const { data } = await apolloClient.query({
     query: gql`
       query PageBySlug($slug: String!) {

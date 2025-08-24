@@ -2,10 +2,10 @@ name: Build App
 description: Build the application using Yarn
 inputs:
   CONTENTFUL_ACCESS_TOKEN:
-    description: 'contentful access token'
+    description: "contentful access token"
     required: true
   CONTENTFUL_SPACE_ID:
-    description: 'contentful space id'
+    description: "contentful space id"
     required: true
 runs:
   using: composite
@@ -29,4 +29,3 @@ runs:
       env:
         CONTENTFUL_ACCESS_TOKEN: ${{ inputs.CONTENTFUL_ACCESS_TOKEN }}
         CONTENTFUL_SPACE_ID: ${{ inputs.CONTENTFUL_SPACE_ID }}
-

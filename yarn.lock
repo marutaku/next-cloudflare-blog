@@ -222,6 +222,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/js@npm:^9.34.0":
+  version: 9.34.0
+  resolution: "@eslint/js@npm:9.34.0"
+  checksum: 933d4ba321b1abc83eecde40eb703871ce00f133eedec54cf928b7fedb61706174dd526997c3f151776922412e3d95cb3634f97ef7b5861b4908f9992f403a63
+  languageName: node
+  linkType: hard
+
 "@eslint/object-schema@npm:^2.1.6":
   version: 2.1.6
   resolution: "@eslint/object-schema@npm:2.1.6"
@@ -5002,6 +5009,8 @@ __metadata:
   dependencies:
     "@apollo/client": 3.14.0
     "@egoist/tailwindcss-icons": 1.9.0
+    "@eslint/eslintrc": ^3.3.1
+    "@eslint/js": ^9.34.0
     "@iconify-json/mdi": 1.2.3
     "@iconify-json/simple-icons": 1.2.48
     "@playwright/test": 1.55.0
