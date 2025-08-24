@@ -27,7 +27,7 @@
     "dotenv": "16.6.1",
     "github-markdown-css": "5.8.1",
     "glob": "11.0.3",
-    "graphql": "16.10.0",
+    "graphql": "16.11.0",
     "gray-matter": "4.0.3",
     "next": "15.5.0",
     "parse-md": "3.0.3",
