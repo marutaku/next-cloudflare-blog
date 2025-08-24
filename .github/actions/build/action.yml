@@ -1,5 +1,12 @@
 name: Build App
 description: Build the application using Yarn
+inputs:
+  CONTENTFUL_ACCESS_TOKEN:
+    description: 'contentful access token'
+    required: true
+  CONTENTFUL_SPACE_ID:
+    description: 'contentful space id'
+    required: true
 runs:
   using: composite
   steps:
@@ -20,6 +27,6 @@ runs:
     - run: yarn build
       shell: bash
       env:
-        CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
-        CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+        CONTENTFUL_ACCESS_TOKEN: ${{ inputs.CONTENTFUL_ACCESS_TOKEN }}
+        CONTENTFUL_SPACE_ID: ${{ inputs.CONTENTFUL_SPACE_ID }}
 
