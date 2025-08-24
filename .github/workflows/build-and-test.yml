@@ -18,7 +18,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./out --project-name=marutaku-blog --branch ${{ github.ref }}
+          command: pages deploy ./out --project-name=marutaku-blog --branch ${{ github.head_ref }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
   test:
     timeout-minutes: 60
