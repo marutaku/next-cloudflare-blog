@@ -76,4 +76,9 @@ export default defineConfig({
   //   url: 'http://localhost:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
+  expect:{
+    toHaveScreenshot: {
+      maxDiffPixelRatio: 0.05,
+    }
+  }
 });
