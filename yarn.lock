@@ -838,7 +838,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:^1.55.0":
+"@playwright/test@npm:1.55.0":
   version: 1.55.0
   resolution: "@playwright/test@npm:1.55.0"
   dependencies:
@@ -4949,7 +4949,7 @@ __metadata:
     "@egoist/tailwindcss-icons": 1.9.0
     "@iconify-json/mdi": 1.2.3
     "@iconify-json/simple-icons": 1.2.48
-    "@playwright/test": ^1.55.0
+    "@playwright/test": 1.55.0
     "@tailwindcss/postcss": 4.1.11
     "@types/node": 22.14.1
     "@types/react": 19.1.8
