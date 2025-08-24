@@ -4976,7 +4976,7 @@ __metadata:
     remark: 15.0.1
     remark-html: 16.0.1
     remark-parse: 11.0.0
-    remark-rehype: 11.1.1
+    remark-rehype: 11.1.2
     sass: 1.89.2
     tailwindcss: 4.1.11
     typescript: 5.8.3
@@ -5664,16 +5664,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remark-rehype@npm:11.1.1":
-  version: 11.1.1
-  resolution: "remark-rehype@npm:11.1.1"
+"remark-rehype@npm:11.1.2":
+  version: 11.1.2
+  resolution: "remark-rehype@npm:11.1.2"
   dependencies:
     "@types/hast": ^3.0.0
     "@types/mdast": ^4.0.0
     mdast-util-to-hast: ^13.0.0
     unified: ^11.0.0
     vfile: ^6.0.0
-  checksum: e199dff098ae6a560e13dd1778dec9c61440f979cc931c4ca4dcde0d58e51c0723243a901c1842379b189083cf4d74f224f57833738095ffa9535179d7cf3f01
+  checksum: 6eab55cb3464ec01d8e002cc9fe02ae57f48162899693fd53b5ba553ac8699dae7b55fce9df7131a5981313b19b495d6fbfa98a9d6bd243e7485591364d9b5b3
   languageName: node
   linkType: hard
 
