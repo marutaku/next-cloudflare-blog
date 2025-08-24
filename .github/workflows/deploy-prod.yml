@@ -1,0 +1,26 @@
+name: build-and-deploy-prod
+
+on:
+  push:
+    branches: [main, master]
+
+jobs:
+  deploy-prod:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build app
+        uses: ./.github/actions/build/
+        with:
+          CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
+          CONTENTFUL_SPACE_ID: ${{ secrets.CONTENTFUL_SPACE_ID }}
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./out --project-name=marutaku-blog
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

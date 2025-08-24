@@ -838,6 +838,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@playwright/test@npm:^1.55.0":
+  version: 1.55.0
+  resolution: "@playwright/test@npm:1.55.0"
+  dependencies:
+    playwright: 1.55.0
+  bin:
+    playwright: cli.js
+  checksum: efa2e6febf1fea8dd9ba1aff45b58bc6e8604a831c21c5e5c49718f07065670ddeec5487d288cc1b044c834b40ab586035ea23c89e78991a19d2daf93fab993e
+  languageName: node
+  linkType: hard
+
 "@rtsao/scc@npm:^1.1.0":
   version: 1.1.0
   resolution: "@rtsao/scc@npm:1.1.0"
@@ -2993,6 +3004,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fsevents@npm:2.3.2":
+  version: 2.3.2
+  resolution: "fsevents@npm:2.3.2"
+  dependencies:
+    node-gyp: latest
+  checksum: 97ade64e75091afee5265e6956cb72ba34db7819b4c3e94c431d4be2b19b8bb7a2d4116da417950c3425f17c8fe693d25e20212cac583ac1521ad066b77ae31f
+  conditions: os=darwin
+  languageName: node
+  linkType: hard
+
+"fsevents@patch:fsevents@2.3.2#~builtin<compat/fsevents>":
+  version: 2.3.2
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  dependencies:
+    node-gyp: latest
+  conditions: os=darwin
+  languageName: node
+  linkType: hard
+
 "function-bind@npm:^1.1.2":
   version: 1.1.2
   resolution: "function-bind@npm:1.1.2"
@@ -4919,6 +4949,7 @@ __metadata:
     "@egoist/tailwindcss-icons": 1.9.0
     "@iconify-json/mdi": 1.2.3
     "@iconify-json/simple-icons": 1.2.29
+    "@playwright/test": ^1.55.0
     "@tailwindcss/postcss": 4.1.11
     "@types/node": 22.14.1
     "@types/react": 19.1.8
@@ -5365,6 +5396,30 @@ __metadata:
     exsolve: ^1.0.1
     pathe: ^2.0.3
   checksum: ac0ac8c7d612397276c931888e04e2b5d99bb8169e0c42dce2371b371ad265ce58fbf1f6bdcd44f86fe545b9491983bd79647ac1568beea3f6871ad9dc74692f
+  languageName: node
+  linkType: hard
+
+"playwright-core@npm:1.55.0":
+  version: 1.55.0
+  resolution: "playwright-core@npm:1.55.0"
+  bin:
+    playwright-core: cli.js
+  checksum: 689955388fa1d46cdbc93d4957688d48c0033ccdcb852f97f9f5e8aa6482a928c885cf06b02eb5acde9426aa1222720456127a8f7793792fef3f7bdb159bd8b2
+  languageName: node
+  linkType: hard
+
+"playwright@npm:1.55.0":
+  version: 1.55.0
+  resolution: "playwright@npm:1.55.0"
+  dependencies:
+    fsevents: 2.3.2
+    playwright-core: 1.55.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    playwright: cli.js
+  checksum: 6165c649a4923651305957d54203ee9f6c80fb5b7d237848c13a98c168c599041eefb6af493f1dbe5e793aa2e24956a1a7205cb1864a64a97f01c7c7189885b7
   languageName: node
   linkType: hard
 
