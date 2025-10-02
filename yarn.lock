@@ -1189,12 +1189,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:22.18.0":
-  version: 22.18.0
-  resolution: "@types/node@npm:22.18.0"
+"@types/node@npm:22.18.8":
+  version: 22.18.8
+  resolution: "@types/node@npm:22.18.8"
   dependencies:
     undici-types: ~6.21.0
-  checksum: a110b66f079ea882be1e300e72978cd3a5e7be8217b362b72152e09f64087731a235a0557fca72d621912a8ba1347d9ba49468c35755dd2581edb7f3f6e016e2
+  checksum: b096c88c685bd9d092b494a01f12b5af3bd4b3046552c112113d1e65f2b60b42e68cd94c4036ddd1a4a6ea66e03d8639855e8d82484ac37a5787555fab696f82
   languageName: node
   linkType: hard
 
@@ -4583,7 +4583,7 @@ __metadata:
     "@iconify-json/simple-icons": 1.2.49
     "@playwright/test": 1.55.1
     "@tailwindcss/postcss": 4.1.14
-    "@types/node": 22.18.0
+    "@types/node": 22.18.8
     "@types/react": 19.1.16
     "@types/react-dom": 19.1.9
     apollo-link: 1.2.14
