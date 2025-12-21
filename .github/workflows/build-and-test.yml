@@ -49,7 +49,7 @@ jobs:
         run: |
           PREVIEW_URL_PREFIX=$(echo '${{ github.head_ref }}' | sed 's/[^a-zA-Z0-9]/-/g' | cut -c-28)
           PLAYWRIGHT_BASE_URL=https://$PREVIEW_URL_PREFIX.next-cloudflare-blog.pages.dev yarn test:e2e
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: ${{ !cancelled() }}
         with:
           name: playwright-report
