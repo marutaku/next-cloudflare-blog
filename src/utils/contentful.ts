@@ -25,7 +25,9 @@ type BlogMetaDataProps = {
 };
 
 export async function getAllPosts(): Promise<BlogProps[]> {
-  const { data } = await apolloClient.query({
+  const { data } = await apolloClient.query<{
+    blogPostCollection: { items: BlogProps[] };
+  }>({
     query: gql`
       query {
         blogPostCollection(
@@ -58,11 +60,13 @@ export async function getAllPosts(): Promise<BlogProps[]> {
       }
     `,
   });
-  return data.blogPostCollection.items;
+  return data?.blogPostCollection.items || [];
 }
 
 export async function getPostBySlug(slug: string): Promise<BlogProps> {
-  const { data } = await apolloClient.query({
+  const { data } = await apolloClient.query<{
+    blogPostCollection: { items: BlogProps[] };
+  }>({
     query: gql`
       query PageBySlug($slug: String!) {
         blogPostCollection(where: { slug: $slug }) {
@@ -93,13 +97,18 @@ export async function getPostBySlug(slug: string): Promise<BlogProps> {
       slug,
     },
   });
+  if (!data?.blogPostCollection.items.length) {
+    throw new Error(`Post with slug "${slug}" not found`);
+  }
   return data.blogPostCollection.items[0];
 }
 
 export async function getPostMetadataBySlug(
   slug: string,
 ): Promise<BlogMetaDataProps> {
-  const { data } = await apolloClient.query({
+  const { data } = await apolloClient.query<{
+    blogPostCollection: { items: BlogMetaDataProps[] };
+  }>({
     query: gql`
       query PageBySlug($slug: String!) {
         blogPostCollection(where: { slug: $slug }) {
@@ -128,5 +137,8 @@ export async function getPostMetadataBySlug(
       slug,
     },
   });
+  if (!data?.blogPostCollection.items.length) {
+    throw new Error(`Post with slug "${slug}" not found`);
+  }
   return data.blogPostCollection.items[0];
 }
