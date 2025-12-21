@@ -33,7 +33,7 @@ jobs:
           command: pages deploy ./out --project-name=marutaku-blog --branch ${{ github.head_ref }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
   test:
-    timeout-minutes: 60
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     needs: ["deploy-preview"]
     steps:
