@@ -1,8 +1,3 @@
-import NextImage, { ImageLoaderProps } from "next/image";
-
-const loader = ({ src }: ImageLoaderProps) => {
-  return src;
-};
 const StaticImage = ({
   src,
   width,
