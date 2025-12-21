@@ -17,7 +17,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@apollo/client": "3.14.0",
+    "@apollo/client": "4.0.11",
     "@egoist/tailwindcss-icons": "1.9.0",
     "@iconify-json/mdi": "1.2.3",
     "@iconify-json/simple-icons": "1.2.63",
