@@ -1,4 +1,3 @@
-import React from "react";
 import Script from "next/script";
 import { markdownToHtml } from "@/libs/articles";
 import "github-markdown-css/github-markdown-light.css";
@@ -21,7 +20,7 @@ export const generateStaticParams = async () => {
 
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> },
-  parent: ResolvingMetadata,
+  _: ResolvingMetadata,
 ): Promise<Metadata> {
   const { slug } = await params;
   const article = await getPostMetadataBySlug(slug);

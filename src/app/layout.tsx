@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import Header from "./_components/common/header";
