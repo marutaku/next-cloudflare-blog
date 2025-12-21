@@ -4895,7 +4895,7 @@ __metadata:
     remark-html: 16.0.1
     remark-parse: 11.0.0
     remark-rehype: 11.1.2
-    rxjs: ^7.8.2
+    rxjs: 7.8.2
     sass: 1.93.2
     tailwindcss: 4.1.18
     typescript: 5.9.3
@@ -5649,7 +5649,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^7.8.2":
+"rxjs@npm:7.8.2":
   version: 7.8.2
   resolution: "rxjs@npm:7.8.2"
   dependencies:
