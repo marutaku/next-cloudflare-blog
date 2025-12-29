@@ -26,6 +26,11 @@ export function PastActivities() {
     <div className="my-4">
       <h2 className="text-xl font-bold">過去の活動</h2>
       <Activity
+        title="組織もAIも成長するコードレビュー - ナレッジの仕組み化で進化する協働のかたち"
+        date="2025/11/27"
+        link="https://developer-productivity-engineering.connpass.com/event/374007/"
+      />
+      <Activity
         title="ChatGPT Pluginからプロダクト応用まで〜大規模言語モデルの力を引き出す方法〜"
         date="2023/07/26"
         link="https://itandi.connpass.com/event/289665/"
