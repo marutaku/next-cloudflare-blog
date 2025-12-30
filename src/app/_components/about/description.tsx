@@ -1,6 +1,6 @@
 import Link from "next/link";
 import StaticImage from "../common/image";
-import { SiGithub, SiX, } from '@icons-pack/react-simple-icons';
+import { SiGithub, SiX } from "@icons-pack/react-simple-icons";
 
 export default function Description() {
   return (
