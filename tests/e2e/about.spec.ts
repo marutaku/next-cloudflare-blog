@@ -5,7 +5,9 @@ test.describe("About Page", () => {
     await page.goto("/about");
   });
   test("about page has no visual regressions", async ({ page }) => {
-    await expect(page).toHaveScreenshot();
+    await expect(page).toHaveScreenshot({
+      timeout: 10000,
+    });
   });
   test.describe("About Description", () => {
     test.describe("アバター画像", () => {

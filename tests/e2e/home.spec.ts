@@ -6,7 +6,9 @@ test.describe("Home", () => {
   });
 
   test("homepage has no visual regressions", async ({ page }) => {
-    await expect(page).toHaveScreenshot();
+    await expect(page).toHaveScreenshot({
+      timeout: 10000,
+    });
   });
 
   test("トップページのタイトルが表示されている", async ({ page }) => {

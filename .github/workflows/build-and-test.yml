@@ -61,7 +61,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Show Playwright cache status
-        run: >- 
+        run: >-
           echo "Cache hit: ${{ steps.playwright-cache.outputs.cache-hit }}"
       - name: Run Playwright tests
         run: |
