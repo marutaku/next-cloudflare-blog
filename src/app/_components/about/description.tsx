@@ -1,5 +1,6 @@
 import Link from "next/link";
 import StaticImage from "../common/image";
+import { SiGithub, SiX } from "@icons-pack/react-simple-icons";
 
 export default function Description() {
   return (
@@ -22,31 +23,17 @@ export default function Description() {
           <div className="text-gray-600 text-3xl my-4">
             <Link
               className="inline-block m-2"
-              href="https://twitter.com/Takumi_Maru0131"
-              target="_blank"
-            >
-              <span className="i-simple-icons-x" />
-            </Link>
-            <Link
-              className="inline-block m-2"
               href="https://github.com/marutaku"
               target="_blank"
             >
-              <span className="i-simple-icons-github" />
-            </Link>
-            <Link
-              className="inline-block m-2"
-              href="https://www.linkedin.com/in/takumi-maruyama-049151156/"
-              target="_blank"
-            >
-              <span className="i-simple-icons-linkedin" />
+              <SiGithub />
             </Link>
             <Link
               className="inline-block m-2"
               href="https://twitter.com/Takumi_Maru0131"
               target="_blank"
             >
-              <span className="i-simple-icons-qiita" />
+              <SiX />
             </Link>
           </div>
         </div>
