@@ -4884,8 +4884,8 @@ __metadata:
     parse-md: 3.0.3
     postcss: 8.5.6
     prettier: 3.8.1
-    react: 19.2.3
-    react-dom: 19.2.3
+    react: 19.2.4
+    react-dom: 19.2.4
     rehype-stringify: 10.0.1
     remark: 15.0.1
     remark-html: 16.0.1
@@ -5422,14 +5422,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:19.2.3":
-  version: 19.2.3
-  resolution: "react-dom@npm:19.2.3"
+"react-dom@npm:19.2.4":
+  version: 19.2.4
+  resolution: "react-dom@npm:19.2.4"
   dependencies:
     scheduler: ^0.27.0
   peerDependencies:
-    react: ^19.2.3
-  checksum: cb1f95df052802f5332cae78303b7fc6f58092d5c7f8d01f0401188b2e0157c1d273a041b900fcc4801f730c70ed17249bd5af170038692878ebe257f641488b
+    react: ^19.2.4
+  checksum: 2650391005468c228616d54431682e190068bfc2e68b9bf33582df637c4b60bfd9925bb6b4bfada2679a6a974d0e756c1db4a656c502e654d77b8a6b6ad162ea
   languageName: node
   linkType: hard
 
@@ -5440,10 +5440,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:19.2.3":
-  version: 19.2.3
-  resolution: "react@npm:19.2.3"
-  checksum: 506e369ae13cb46b7f303c0201aadf856642f482cdf5b1c3730c3a6d1762fd5a3ae1dd31196a4686bfbbe56456dcd0c48a4656c75cbcb45620e3028c54789ae9
+"react@npm:19.2.4":
+  version: 19.2.4
+  resolution: "react@npm:19.2.4"
+  checksum: edf2b96619fab3a8b11714f16a0994a92c6b473aecf3269b63e4fa317d3073d40513c1f19cf4415ebbad94d35b48ff76ad768480db663037e2d929e8d60596b8
   languageName: node
   linkType: hard
 
