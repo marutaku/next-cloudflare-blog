@@ -1,7 +1,7 @@
 # Use the official Playwright image.
 # It has all the necessary dependencies for Playwright.
 # Using a specific version is recommended for stability.
-FROM mcr.microsoft.com/playwright:v1.58.1-noble
+FROM mcr.microsoft.com/playwright:v1.58.2-noble
 
 # Set the working directory in the container.
 WORKDIR /app
