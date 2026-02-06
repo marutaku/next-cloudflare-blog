@@ -25,7 +25,7 @@
     "apollo-link": "1.2.14",
     "apollo-link-http": "1.5.17",
     "date-fns": "4.1.0",
-    "dotenv": "17.2.3",
+    "dotenv": "17.2.4",
     "github-markdown-css": "5.8.1",
     "glob": "13.0.1",
     "graphql": "16.12.0",
