@@ -3371,10 +3371,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"github-markdown-css@npm:5.8.1":
-  version: 5.8.1
-  resolution: "github-markdown-css@npm:5.8.1"
-  checksum: 040c4cb99d3bb42ac1ae183e4d542417731b628127b0a22f7ce771f64c567ee2125e29352aeee8827f336ab9503c42b0769e66aa6eaabf762fc935b96e6a8ebf
+"github-markdown-css@npm:5.9.0":
+  version: 5.9.0
+  resolution: "github-markdown-css@npm:5.9.0"
+  checksum: 85a8ca4ccfb17ee4bbbf519f9d5d6c63c4fb94aeaa1026291f265e3bbc8eff592b6c0f6f232a054ae0d1bf0ac8415e8ed5ef019f760ef48fdf81e6eace1f0083
   languageName: node
   linkType: hard
 
@@ -4947,7 +4947,7 @@ __metadata:
     dotenv: 17.3.1
     eslint: 9.39.3
     eslint-config-next: 16.1.6
-    github-markdown-css: 5.8.1
+    github-markdown-css: 5.9.0
     glob: 13.0.6
     graphql: 16.13.0
     gray-matter: 4.0.3
