@@ -483,12 +483,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/simple-icons@npm:1.2.64":
-  version: 1.2.64
-  resolution: "@iconify-json/simple-icons@npm:1.2.64"
+"@iconify-json/simple-icons@npm:1.2.74":
+  version: 1.2.74
+  resolution: "@iconify-json/simple-icons@npm:1.2.74"
   dependencies:
     "@iconify/types": "*"
-  checksum: b5bec88f39d3e24f40c2f01d9840df5eb4b511b00bd990d82a7f34b713865aa9515b109d5b5bea688021808a8ad85d3d1d42652e196a19f058775abd11394024
+  checksum: 3e805d1ebc964380104ca79a8f97569d0791392d59812607a9f8003eec5d3f5cc8aa3291624aac92476cee0413bac491945fe85f20814080a90a49cbb12ba761
   languageName: node
   linkType: hard
 
@@ -4913,7 +4913,7 @@ __metadata:
     "@eslint/eslintrc": 3.3.5
     "@eslint/js": 9.39.4
     "@iconify-json/mdi": 1.2.3
-    "@iconify-json/simple-icons": 1.2.64
+    "@iconify-json/simple-icons": 1.2.74
     "@icons-pack/react-simple-icons": ^13.8.0
     "@playwright/test": 1.58.2
     "@tailwindcss/postcss": 4.2.2
