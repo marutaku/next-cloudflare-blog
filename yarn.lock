@@ -29,9 +29,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@apollo/client@npm:4.1.6":
-  version: 4.1.6
-  resolution: "@apollo/client@npm:4.1.6"
+"@apollo/client@npm:4.1.7":
+  version: 4.1.7
+  resolution: "@apollo/client@npm:4.1.7"
   dependencies:
     "@graphql-typed-document-node/core": ^3.1.1
     "@wry/caches": ^1.0.0
@@ -56,7 +56,7 @@ __metadata:
       optional: true
     subscriptions-transport-ws:
       optional: true
-  checksum: 46ab2e676e7e676e03f9eff30a15032f71fc31b0dc4b445df0676357b66c33f5e8dca6ea4bf6fc1ddcc9a9fc81c8df81906b673c47f1be822205c51c16e91840
+  checksum: fa401f70a0d6f0b001419bb7547b7922a199dd0c15bf2b57684ee77d4fdcef8c67a9d48039e650e4c38a2f78fecd63b2875e5c63efe888b0c60e4d50d5b5054b
   languageName: node
   linkType: hard
 
@@ -4908,7 +4908,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "next-cloudflare-blog@workspace:."
   dependencies:
-    "@apollo/client": 4.1.6
+    "@apollo/client": 4.1.7
     "@egoist/tailwindcss-icons": 1.9.0
     "@eslint/eslintrc": 3.3.5
     "@eslint/js": 9.39.4
