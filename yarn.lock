@@ -4965,7 +4965,7 @@ __metadata:
     next: 16.2.4
     next-sitemap: 4.2.3
     parse-md: 3.0.3
-    postcss: 8.5.12
+    postcss: 8.5.13
     prettier: 3.8.3
     react: 19.2.5
     react-dom: 19.2.5
@@ -5429,14 +5429,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.5.12":
-  version: 8.5.12
-  resolution: "postcss@npm:8.5.12"
+"postcss@npm:8.5.13":
+  version: 8.5.13
+  resolution: "postcss@npm:8.5.13"
   dependencies:
     nanoid: ^3.3.11
     picocolors: ^1.1.1
     source-map-js: ^1.2.1
-  checksum: e11818908d9f1693438bd7c6e3af99431552f5c9b3f400ebe76af3f25bd1b1efb26bc4c13533f3dcff45540a66ad4e84c62e06491f88003bbfa4ef35b6175f55
+  checksum: f02410c109514c39cfae480359d6221627ff22a0ebbb257bacddee4b65028bfcb5a067b874e0c8c661403ef021bbbfaea7082c81fc4c36dd593991506976fda1
   languageName: node
   linkType: hard
 
