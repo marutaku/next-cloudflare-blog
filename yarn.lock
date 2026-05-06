@@ -3490,10 +3490,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:16.13.2":
-  version: 16.13.2
-  resolution: "graphql@npm:16.13.2"
-  checksum: d6e70763a851a6d695d8b0a711ed2e139d88014ea400a85d0dc150fc056953752cd85c16001ab81d119b38d83f93b08c4b3b7c4e1a03f414e866e5e4dd4aca3e
+"graphql@npm:16.14.0":
+  version: 16.14.0
+  resolution: "graphql@npm:16.14.0"
+  checksum: a69e939974f44fbf4c367436dc4114b34fb9ed6db30bc8bd567af33cfaab50da19e59df641d18877c16fd5bf8b30b66b145521853a8cca793e80b9ccc00d78f6
   languageName: node
   linkType: hard
 
@@ -4960,7 +4960,7 @@ __metadata:
     eslint-config-next: 16.2.4
     github-markdown-css: 5.8.1
     glob: 13.0.6
-    graphql: 16.13.2
+    graphql: 16.14.0
     gray-matter: 4.0.3
     next: 16.2.4
     next-sitemap: 4.2.3
