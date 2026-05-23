@@ -24,7 +24,7 @@
     "@icons-pack/react-simple-icons": "^13.8.0",
     "apollo-link": "1.2.14",
     "apollo-link-http": "1.5.17",
-    "date-fns": "4.2.1",
+    "date-fns": "4.3.0",
     "dotenv": "17.4.2",
     "github-markdown-css": "5.8.1",
     "glob": "13.0.6",
