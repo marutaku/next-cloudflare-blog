@@ -507,12 +507,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@icons-pack/react-simple-icons@npm:13.13.0":
-  version: 13.13.0
-  resolution: "@icons-pack/react-simple-icons@npm:13.13.0"
+"@icons-pack/react-simple-icons@npm:13.15.1":
+  version: 13.15.1
+  resolution: "@icons-pack/react-simple-icons@npm:13.15.1"
   peerDependencies:
     react: ^16.13 || ^17 || ^18 || ^19
-  checksum: 9ec88b2144ccccf5c8e908f547bd1a246d263508eb66aa8764a151d83c0d33710ce1ce58f1c46451d96c8ca95701de6f86c4bfd401eb9070a5d724d8202fa3b6
+  checksum: 43d0f5ec7c7f8fb983e9cbc58f9bafd53b1e21ff9c2b5f6298d8d2435159c6186381f0da03bb187af343d7663c5ad793dadddcdcc00341e98a72656be1ec36b7
   languageName: node
   linkType: hard
 
@@ -4966,7 +4966,7 @@ __metadata:
     "@eslint/js": 9.39.5
     "@iconify-json/mdi": 1.2.3
     "@iconify-json/simple-icons": 1.2.64
-    "@icons-pack/react-simple-icons": 13.13.0
+    "@icons-pack/react-simple-icons": 13.15.1
     "@playwright/test": 1.62.1
     "@tailwindcss/postcss": 4.3.3
     "@types/node": 24.13.3
