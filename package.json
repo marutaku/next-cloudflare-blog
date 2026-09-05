@@ -58,7 +58,7 @@
     "prettier": "3.9.6",
     "sass": "1.104.0",
     "tailwindcss": "4.3.3",
-    "typescript": "5.9.3"
+    "typescript": "7.0.2"
   },
   "packageManager": "yarn@3.8.7"
 }
