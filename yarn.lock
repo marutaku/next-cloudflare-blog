@@ -2615,10 +2615,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv@npm:17.4.2":
-  version: 17.4.2
-  resolution: "dotenv@npm:17.4.2"
-  checksum: 217bf2c4696ca40acc13ad063341e9c77cedfdd75e56e4919f4cf2c6333e4f7b38a4b4067e49d006125502a61060cbe85c7eecb0644e4d99ff014693eb7e62c4
+"dotenv@npm:18.0.1":
+  version: 18.0.1
+  resolution: "dotenv@npm:18.0.1"
+  bin:
+    dotenv: dist/index.cjs
+  checksum: 8cd50930a9a5ce0b2da5913383f8e4cd1936fedfb3db3f688b6f4217193cf72ad14b0fb26e5e2e68c157db13e8d26805dcf83219c67e23fd2a49867890804f27
   languageName: node
   linkType: hard
 
@@ -4994,7 +4996,7 @@ __metadata:
     apollo-link-http: 1.5.17
     autoprefixer: 10.6.1
     date-fns: 4.4.0
-    dotenv: 17.4.2
+    dotenv: 18.0.1
     eslint: 9.39.5
     eslint-config-next: 16.3.5
     github-markdown-css: 5.8.1
