@@ -1210,14 +1210,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:1.63.0":
-  version: 1.63.0
-  resolution: "@playwright/test@npm:1.63.0"
+"@playwright/test@npm:1.64.0":
+  version: 1.64.0
+  resolution: "@playwright/test@npm:1.64.0"
   dependencies:
-    playwright: 1.63.0
+    playwright: 1.64.0
   bin:
     playwright: cli.js
-  checksum: ed4a641d14f9d2f6740a86a36602e33aa7fef2287fb8f3a02112cd881812a3431ede800db0e5ba74fff9fdd65071cdc1af50a3e6677e62295f41f82dcca01e0a
+  checksum: 0f1af5c329060d18e746347a9d22a31bfb04fb586f091108ce31adfaa8fee1079a240166776a51f648f4d7757c15f4f4bd6a3ce9e8aa7abe0323ef2732944d18
   languageName: node
   linkType: hard
 
@@ -5075,7 +5075,7 @@ __metadata:
     "@iconify-json/mdi": 1.2.3
     "@iconify-json/simple-icons": 1.2.64
     "@icons-pack/react-simple-icons": 13.15.1
-    "@playwright/test": 1.63.0
+    "@playwright/test": 1.64.0
     "@tailwindcss/postcss": 4.3.3
     "@types/node": 24.19.2
     "@types/react": 19.3.0
@@ -5509,23 +5509,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.63.0":
-  version: 1.63.0
-  resolution: "playwright-core@npm:1.63.0"
+"playwright-core@npm:1.64.0":
+  version: 1.64.0
+  resolution: "playwright-core@npm:1.64.0"
   bin:
     playwright-core: cli.js
-  checksum: b4c190c4099d0620a9ba22a0e826194ad511c3149153a79c44dc632ac2058da7da01cf66f011ee3ee0f360bbd83aa2f67f04519eb3c7c2bea257c4f598537937
+  checksum: 60384301a8acd54dc91d8053e76616406db540b322f19f617c77ae4db8e6d3dc2f9f7b6ed0999dcbf455c65130316897c7f5c721b4591734ec237e121a322561
   languageName: node
   linkType: hard
 
-"playwright@npm:1.63.0":
-  version: 1.63.0
-  resolution: "playwright@npm:1.63.0"
+"playwright@npm:1.64.0":
+  version: 1.64.0
+  resolution: "playwright@npm:1.64.0"
   dependencies:
-    playwright-core: 1.63.0
+    playwright-core: 1.64.0
   bin:
     playwright: cli.js
-  checksum: 6f90bca3d61f509667b9fdc4ef9c845833e4cb3cbb1c0d4e26672efb66b97b7f7db47d6a947a66772a23c191859639a6db0211c7753e6a1a5bc42293fd226c5a
+  checksum: fa6aa08097d305bffc99613ae5484651670e2210bb9d7bfb268570d9d957feccce975b7f74fb6042f4e714e05fabcfd54166e48c3ac88f68a59e7d308e9663af
   languageName: node
   linkType: hard
 
